@@ -1,6 +1,8 @@
 # sysreport
 A System/User report tool written in pure bash.
 
+![example image](example.png "example")
+
 ## Requirements
 This script requires [FIGlet](http://www.figlet.org/) and [fortune](https://github.com/shlomif/fortune-mod) for the ASCII art text and MOTD.
 
