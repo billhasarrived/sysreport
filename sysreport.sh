@@ -123,6 +123,10 @@ sleep 0.2
 #echo -n "# Packages (Portage): "
 #echo -n $(equery list '*'| wc -l)
 #echo "                                            #"
+#Print number of xbps packages
+#echo -n "# Packages (xbps): "
+#echo -n $(xbps-query -l | wc -l)
+#echo "                                        #" 
 #Print number of snap packages
 #echo -n "# Packages (Snap): "
 #echo -n $(snap list | sed 1d ! wc -l)
