@@ -126,7 +126,11 @@ sleep 0.2
 #Print number of xbps packages
 #echo -n "# Packages (xbps): "
 #echo -n $(xbps-query -l | wc -l)
-#echo "                                        #" 
+#echo "                                        #"
+#Print number of slackware packages
+#echo -n "# Packages (slackware): "
+#echo -n $(ls /var/log/packages | wc -l)
+#echo "                                             #" 
 #Print number of snap packages
 #echo -n "# Packages (Snap): "
 #echo -n $(snap list | sed 1d ! wc -l)
