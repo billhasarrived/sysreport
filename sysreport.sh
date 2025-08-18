@@ -131,9 +131,12 @@ sleep 0.2
 #echo -n "# Packages (slackware): "
 #echo -n $(ls /var/log/packages | wc -l)
 #echo "                                             #" 
+#echo -n "# Packages (zypper): "
+#echo -n $(zypper search -i | sed 1d | wc -l)
+#echo "                                          #"
 #Print number of snap packages
 #echo -n "# Packages (Snap): "
-#echo -n $(snap list | sed 1d ! wc -l)
+#echo -n $(snap list | sed 1d | wc -l)
 #echo "                                        #"
 #sleep 0.2
 #print flatpak packages
