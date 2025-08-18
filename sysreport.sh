@@ -123,17 +123,21 @@ sleep 0.2
 #echo -n "# Packages (Portage): "
 #echo -n $(equery list '*'| wc -l)
 #echo "                                            #"
+#sleep 0.2
 #Print number of xbps packages
 #echo -n "# Packages (xbps): "
 #echo -n $(xbps-query -l | wc -l)
 #echo "                                        #"
+#sleep 0.2
 #Print number of slackware packages
 #echo -n "# Packages (slackware): "
 #echo -n $(ls /var/log/packages | wc -l)
 #echo "                                             #" 
+#sleep 0.2
 #echo -n "# Packages (zypper): "
 #echo -n $(zypper search -i | sed 1d | wc -l)
 #echo "                                          #"
+#sleep 0.2
 #Print number of snap packages
 #echo -n "# Packages (Snap): "
 #echo -n $(snap list | sed 1d | wc -l)
