@@ -135,7 +135,7 @@ sleep 0.2
 #echo "                                             #" 
 #sleep 0.2
 #echo -n "# Packages (zypper): "
-#echo -n $(zypper search -i | sed 1d | wc -l)
+#echo -n $(zypper search -i | sed '1,2d' | wc -l)
 #echo "                                          #"
 #sleep 0.2
 #Print number of snap packages
